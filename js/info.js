@@ -21,7 +21,7 @@ require.config({
 require(['utils','jquery','bootstrap','footer','loginPanel','dataTitle','backTop'],function(utils,$){
 	$(document).ready(function(){
 		//加载完成
-		$("body").show();
+		$("html").show();
 
 		//用户头像下的下拉菜单
 		var usermenu = $(".usermenu"),
