@@ -1,0 +1,4 @@
+define(function(){
+	$("head").append('<style>.footer{width: 100%;height: 32px;background-color: #000;position: fixed;left: 0;bottom: 0;overflow: hidden;z-index: 999;}.footer ul,.footer li{padding: 0;margin: 0;list-style: none;}.footer ul *{font-size: 12px;}.footer ul{padding: 0 5px;}.footer li{height: 100%;border-left: 1px solid #666666;padding: 0 10px;display: inline-block;}.footer li:first-child{border-left: 0;}.footer li span{color: #666666;}.footer li a{color: #337ab7;text-decoration: none;line-height: 35px;}.footer li a:hover{text-decoration: underline;color: rgb(35, 82, 124);}@media screen and (max-width: 767px){.footer ul{text-align: center;}}</style>');
+	$("body").append('<div class="footer"><ul><li><a href="#">版权声明</a></li><li><a href="#">在线反馈</a></li><li><a href="#">广告合作</a></li><li><a href="#">帮助中心</a></li><li><span>Copyright © 2012-2018 jQuery插件库Version 3.0.0. 备案号:</span><a href="#">沪ICP备13043785号-1</a></li></ul></div>');
+})

@@ -1,0 +1,291 @@
+.header{}
+
+/*@header-top 头部导航条*/
+	.header .header-top{
+		border-radius: 0;
+		width: 100%;
+		margin-bottom: 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 999;
+		border-bottom: 1px solid #222;
+		background-color: #000;
+	}
+
+	.header-top .header-logo{
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+
+	.header-top .header-logo img{
+		width: auto;
+		height: 100%;
+		display: block;
+	}
+
+	@media screen and (max-width: 982px){
+		.header-top .navbar-right>li{margin-left: -15px;}
+	}
+	@media screen and (max-width: 765px){
+		.header-top .navbar-right>li{margin-left: 0;}
+	}
+
+	.header-top .navbar-right li a{
+		font-size: 12px;
+	}
+
+	.header-top .navbar-right li a.message-api{
+		font-size: 13px;
+		font-weight: 700;
+		color: #fff;
+	}
+
+	.header-top .usermenu{
+		height: 50px;
+		display: none;
+	}
+
+	.header-top .navbar-right li.userlogin a{
+		padding-right: 0;
+	}
+
+	.header-top .navbar-right li a.user-head{
+		display: inline-block;
+		min-height: 50px;
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-right: 0;
+		display: inline-block;
+		background-color: rgb(0, 0, 0)!important;
+		line-height: 50px;
+	}
+
+	.header-top .navbar-right li a.user-head img{
+		display: block;
+		width: 37px;
+		height: 37px;
+		border-radius: 50%;
+		margin-top: 5px;
+		line-height: 50px;
+	}
+
+	@media screen and (max-width: 850px){
+		.header-top .navbar-right li a.message-api{display: none;}
+	}
+
+	.header-top .navbar-right li a i{
+		margin-right: 5px;
+	}
+
+	.header-top .usermenu ul{
+		min-width: 108px;
+		text-align: center;
+		box-shadow: none;
+		border-radius: 0;
+		right: -16px;
+		padding-top: 0;
+		padding-bottom: 0;
+		border: 0;
+	}
+
+	@media screen and (max-width: 768px){
+		.header-top .navbar-right > li{
+			margin-left: 0;
+		}
+		.header-top .usermenu{
+			height: initial;
+		}
+		.header-top .usermenu ul{
+			text-align: left;
+		}
+	}
+
+	.header-top .usermenu ul a{
+		color: #337ab7;
+		font-size: 14px;
+		padding-top: 0;
+		padding-bottom: 0;
+		line-height: 35px;
+	}
+
+	.header-top .usermenu ul a:hover{
+		background-color: rgb(255, 245, 197);
+		font-weight: bold;
+	}
+
+/*@header-main 头部背景特效*/
+	.header .header-main{
+		width: 100%;
+		height: 404px;
+		background-color: #17181c;
+		position: fixed;
+		top: 51px;
+		left: 0;
+	}
+
+	.header-main iframe{
+		width: 100%;
+		height: 100%;
+	}
+
+	.header-main .iframe-toggle{
+		display: block;
+		color: #666666;
+		background-color: rgba(255, 255, 255, 0.13);
+		font-size: 12px;
+		padding: 3px;
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		border-radius: 5px;
+		cursor: pointer;
+		padding-top: 5px;
+	}
+
+	.header-main .iframe-toggle:before{
+		content: '如果您的电脑配置较低，请关闭背景特效';
+		color: #fff;
+		background-color: #000;
+		font-size: 12px;
+		border-radius: 5px;
+		display: none;
+		width: 200px;
+		position: absolute;
+		padding: 4px 5px;
+		text-align: center;
+		left: -210px;
+		line-height: 15px;
+		top: -6px;
+	}
+
+	.header-main .iframe-toggle:after{
+		content: '';
+		display: none;
+		width: 0;
+		height: 0;
+		border: 6px solid;
+		border-color: transparent transparent transparent #000;
+		position: absolute;
+		top: 6px;
+		left: -10px;
+	}
+
+	.header-main .iframe-toggle:hover:before,.header-main .iframe-toggle:hover:after{
+		display: block;
+	}
+
+	.header-main .text-1{
+		position: absolute;
+		top: 126px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.header-main .text-1 img{
+		display: inline-block;
+	}
+
+	.header-main .text-2{
+		position: absolute;
+		top: 190px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.header-main .text-2-inner{
+		display: inline-block;
+		text-align: right;
+		width: 728px;
+	}
+
+	.header-main .text-2 a{
+		color: #fff;
+		opacity: 0.7;
+		text-decoration: none;
+		font-size: 14px;
+	}
+
+	.header-main .text-2 a:hover{
+		text-decoration: underline;
+	}
+
+	.header-main .search-wrap{
+		width: 100%;
+		height: 60px;
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		top: 215px;
+	}
+
+	.header-main .search-inner{
+		width: 728px;
+		height: 60px;
+		margin: 0 auto;
+		background-color: #eceff1;
+		padding-left: 50px;
+		padding-right: 173px;
+		position: relative;
+		border-radius: 5px;
+	}
+
+	.header-main .search-wrap input{
+		display: block;
+		width: 100%;
+		height: 60px;
+		background-color: #eceff1;
+		text-align: left;
+		border-radius: 5px;
+		box-sizing: border-box;
+		border: 0;
+	}
+
+	.header-main .search-wrap .search-icon{
+		width: 50px;
+		height: 60px;
+		text-align: center;
+		display: inline-block;
+		line-height: 60px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: rgb(176, 190, 197);
+		font-size: 18px;
+		transition: color 0.6s;
+	}
+
+	.header-main .search-wrap .search-icon.hover{
+		color: rgb(62, 161, 226);
+	}
+
+	.header-main .search-wrap button{
+		width: 173px;
+		height: 60px;
+		box-sizing: border-box;
+		background-color: rgb(224, 71, 24);
+		color: #fff;
+		font-size: 15px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		border: 0;
+		border-radius: 0 5px 5px 0;
+	}
+
+	@media screen and (max-width: 768px){
+		.header-main .search-inner{
+			width: 85%;
+			padding-left: 40px;
+			padding-right: 115px;
+		}
+		.header-main .search-wrap .search-icon{
+			width: 40px;
+		}
+		.header-main .search-wrap button{
+			width: 115px;
+		}
+	}

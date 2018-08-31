@@ -1,0 +1,6 @@
+define(function(){
+	$("body").append('<div class="modal fade" id="login-panel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog"><div class="modal-content bg"><div class="modal-header panel-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button></div><div class="modal-body panel-body"><form action=""><div class="form-group"><label for="email" class="control-label"><i class="fa fa-envelope-o"></i></label><input type="email" name="email" class="form-control" placeholder="请输入登录邮箱"></div><div class="form-group"><label for="password" class="control-label"><i class="fa fa-unlock-alt"></i></label><input type="password" name="password" class="form-control" placeholder="请输入登录密码"><button type="submit" class="submit">登录</button></div><div class="form-group"><a href="#" class="forget">忘记密码</a><a href="#" class="register">注册新用户</a></div></form></div><div class="modal-footer panel-footer"><ul><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#"></a></li></ul></div><div class="bg-wrap"></div><div class="mask-close"></div></div></div></div>');
+	setTimeout(function(){},0);
+
+	return $("#login-panel");
+})

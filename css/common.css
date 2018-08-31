@@ -1,0 +1,27 @@
+.clearfix:after{
+	content: '';
+	display: table;
+	visibility: hidden;
+	clear: both;
+}
+input:focus,button:focus{
+	outline: 0;
+}
+@keyframes enlarge{
+	from{
+		opacity: 0;
+		transform:scale(0,0)  translateX(-50%);
+	}
+	to{
+		opacity: 1;
+		transform:scale(1,1)  translateX(-50%);
+	}
+}
+@keyframes fade{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@keyframes fade-re{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}

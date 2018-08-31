@@ -1,0 +1,14 @@
+@import url('header.css');
+@import url('info-main.css');
+@import url('login-panel.css');
+
+.clearfix:after{
+	content: '';
+	display: table;
+	visibility: hidden;
+	clear: both;
+}
+
+body{
+	display: none;
+}
