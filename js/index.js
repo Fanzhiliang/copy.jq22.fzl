@@ -68,7 +68,8 @@ require(['utils','jquery','bootstrap','footer','loginPanel','dataTitle'],functio
 				return Math.round(Math.random()*(m-1))+n;
 			},
 			isShow = false;
-		bannerIframe.attr('src',url+'a'+getNum(1,15)+'.html');
+		// bannerIframe.attr('src',url+'a'+getNum(1,15)+'.html');
+		bannerIframe.attr('src','bbg.html');
 		$(".iframe-toggle").click(function(){
 			if(isShow){
 				bannerIframe.attr('src','bbg.html');

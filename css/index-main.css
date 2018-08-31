@@ -46,6 +46,7 @@
 	width: 125px;
 	height: 48px;
 	border-bottom: 2px solid transparent;
+	-webkit-transition: border 0.3s 0.2s;
 	transition: border 0.3s 0.2s;
 }
 
@@ -72,6 +73,7 @@
 .main-nav a span{
 	color: rgb(105, 105, 105);
 	font-size: 15px;
+	-webkit-transition: color 0.3s 0.2s;
 	transition: color 0.3s 0.2s;
 }
 
@@ -171,6 +173,7 @@
 	border-top-width: 2px;
 	border-right-width: 2px;
 	transition: width 0.2s ease-in,height 0.2s 0.2s ease-in,border-top-width 0.2s 0.1s ease-in,border-right-width 0.2s 0.45s;
+	-webkit-transition: width 0.2s ease-in,height 0.2s 0.2s ease-in,border-top-width 0.2s 0.1s ease-in,border-right-width 0.2s 0.45s;
 }
 
 .main-nav .drop-panel .drop-item li:hover:after{
@@ -180,6 +183,7 @@
 	border-bottom-width: 2px;
 	border-left-width: 2px;
 	transition: width 0.2s 0.55s ease-in,height 0.2s 0.8s ease-in,border-bottom-width 0.2s 0.65s ease-in,border-left-width 0.2s 0.9s;
+	-webkit-transition: width 0.2s 0.55s ease-in,height 0.2s 0.8s ease-in,border-bottom-width 0.2s 0.65s ease-in,border-left-width 0.2s 0.9s;
 }
 
 .main-nav .drop-panel .drop-item li a{
@@ -190,6 +194,7 @@
 	font-size: 15px;
 	color: #111;
 	transition: color 0.3s;
+	-webkit-transition: color 0.3s;
 	position: relative;
 	z-index: 9;
 }
@@ -230,6 +235,7 @@
 
 .main .main-body.blur{
 	transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
 	-webkit-filter: blur(3px); /* Chrome, Opera */
        -moz-filter: blur(3px);
         -ms-filter: blur(3px);    
@@ -274,11 +280,14 @@
 	margin-bottom: 20px;
 	float: left;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.18);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.18);
 	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 
 .main-body .list-item *{
 	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 
 .list-item .ad{
@@ -377,6 +386,7 @@
 	text-align: center;
 	border-top: 1px solid #e7e7e7;
 	box-shadow: 0 1px 0 0 #fff inset;
+	-webkit-box-shadow: 0 1px 0 0 #fff inset;
 	padding: 7px 15px;
 	color: #8B8B8C;
 	font-weight: bold;
@@ -427,6 +437,7 @@
 
 .list-item:hover .img img{
 	transform: scale(1.05, 1.05);
+	-webkit-transform: scale(1.05, 1.05);
 }
 
 .list-item:hover .img:before{
@@ -481,11 +492,12 @@
 	background-color: #fff;
 	border-radius: 3px;
 	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.05);
 	color: #000;
 	text-decoration: none;
 	font-size: 25px;
 	font-weight: bold;
-	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
 	box-sizing: border-box;
 }
 

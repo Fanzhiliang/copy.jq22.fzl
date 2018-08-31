@@ -154,6 +154,7 @@
 	background-repeat: no-repeat;
 	background-size: 85px 85px;
 	transition: background 0.5s;
+	-webkit-transition: background 0.5s;
 }
 
 #login-panel .panel-footer a:hover{
