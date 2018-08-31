@@ -67,7 +67,7 @@ require(['utils','jquery','bootstrap','footer','loginPanel','dataTitle'],functio
 			getNum = function(n,m){
 				return Math.round(Math.random()*(m-1))+n;
 			},
-			isShow = true;
+			isShow = false;
 		bannerIframe.attr('src',url+'a'+getNum(1,15)+'.html');
 		$(".iframe-toggle").click(function(){
 			if(isShow){
