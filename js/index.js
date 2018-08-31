@@ -71,9 +71,11 @@ require(['utils','jquery','bootstrap','footer','loginPanel','dataTitle'],functio
 		bannerIframe.attr('src',url+'a'+getNum(1,15)+'.html');
 		$(".iframe-toggle").click(function(){
 			if(isShow){
-				bannerIframe.attr('src',url+'bbg.html');
+				bannerIframe.attr('src','bbg.html');
+				$(this).text('开启背景特性');
 			}else{
 				bannerIframe.attr('src',url+'a'+getNum(1,15)+'.html');
+				$(this).text('关闭背景特性');
 			}
 			isShow = !isShow;
 		})
