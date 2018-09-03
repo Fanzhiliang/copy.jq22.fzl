@@ -447,6 +447,11 @@
 		font-family: inherit;
 		padding-top: 3px;
 	}
+
+	.main-inner .sidebar .author h4 a{
+		text-decoration: none;
+		color: #333;
+	}
 	
 	.main-inner .sidebar .author .user-head{
 		display: inline-block;
