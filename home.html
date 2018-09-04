@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>用户介绍</title>
+    <title>个人中心</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
     <!--[if lt IE 9]>
@@ -12,7 +12,7 @@
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/home.css">
   </head>
   <body>
     <div class="header">
@@ -198,35 +198,69 @@
       <!-- 主要内容 -->
       <div class="main-body">
         <div class="headline">
-          <a href="index.html">首页</a><span class="slash">用户介绍</span>
+          <a href="index.html">首页</a><span class="slash">个人中心</span>
         </div>
         <div class="main-value">
           <div class="sidebar">
             <div class="author">
               <h6>PROMULGATOR</h6>
               <div class="info">
-                <a href="home.html" class="user-head"><img src="img/test-head-2.png" alt=""></a>
-                <h4>zhangweizhen</h4><i class="fa fa-map-marker"></i><span>广东省</span>
+                <a href="home.html" class="user-head"><img src="img/test-head.jpg" alt=""></a>
+                <h4>fzl</h4><i class="fa fa-map-marker"></i><span>广东省广州市</span>
               </div>
             </div>
             <div class="list-group">
               <div class="list-group-item">
-                <i class="fa fa-heart"></i>关注TA的人<span>1</span>
+                <i class="fa fa-user-secret"></i>第 907915 位会员
+              </div>
+              <div class="list-group-item">
+                <i class="fa fa-btc"></i>我的jQ币<span class="red">0</span>
+              </div>
+              <div class="list-group-item">
+                <i class="fa fa-btc"></i>回答问题获得jQ币<span class="red">0</span>
+              </div>
+              <div class="list-group-item">
+                <i class="fa fa-heart"></i>关注我的人数<span class="blue">0</span>
+              </div>
+              <div class="list-group-item">
+                <i class="fa fa-hand-pointer-o"></i>总访问量<span class="blue">0</span>
+              </div>
+              <div class="list-group-item">
+                <i class="fa fa-cloud-download"></i>插件下载记录<span class="blue"><a href="#">查看下载记录</a></span>
               </div>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <i class="fa fa-hand-pointer-o"></i>总访问量<span>4084</span>
-              </div>
+            <a href="#" class="btn btn-success"><i class="fa fa-jpy"></i>购买JQ币</a>
+            <a href="#" class="btn btn-info">发布资源获得JQ币</a>
+            <div class="note-list">
+              <p><i class="fa fa-lightbulb-o"></i>资源中发布垃圾代码的用户永久封号！</p>
+              <p><i class="fa fa-lightbulb-o"></i>通过右下角图标查看所发布资源的最新留言！</p>
+              <p><i class="fa fa-lightbulb-o"></i>插件收藏加入分类功能！</p>
+              <p><i class="fa fa-lightbulb-o"></i>签到功能完成，可以签到获得jq币！</p>
+              <p><i class="fa fa-lightbulb-o"></i>现在可以通过点击↑上方头像来修改头像了！</p>
             </div>
           </div>
           <div class="body">
             <ul class="top-nav">
               <li class="on"><a href="#">
-                <i class="fa fa-codepen"></i>TA发布的插件
+                <i class="fa fa-user-secret"></i>发布的插件
               </a></li>
               <li><a href="#">
-                <i class="fa fa-heart"></i>TA收藏的插件
+                <i class="fa fa-heart"></i>收藏插件
+              </a></li>
+              <li><a href="#">
+                <i class="fa fa-code"></i>代码收藏
+              </a></li>
+              <li><a href="#">
+                <i class="fa fa-file-code-o"></i>发布的代码
+              </a></li>
+              <li><a href="#">
+                <i class="fa fa-file-code-o"></i>常用代码收藏
+              </a></li>
+              <li><a href="#">
+                <i class="fa fa-user-secret"></i>关注的人
+              </a></li>
+              <li><a href="#" id="signIn">
+                <i class="fa fa-pencil-square-o"></i>签到
               </a></li>
             </ul>
             <div class="body-pager">
@@ -298,6 +332,29 @@
       </div>
     </div>
 
+    <!-- 签到模态框 -->
+    <div class="modal fade" id="signIn-panel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-pencil-square-o"></i>签到</h4>
+                </div>
+                <div class="modal-body">
+                  <h4>你已连续签到 <span class="num">0</span>天！</h4>
+                  <p>签到说明：连续签到3天以上,每天签到都会获得1jQ币.</p>
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="0" 
+                          aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                      </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">签到</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
     <script src="js/require.js" data-main="js/user.js"></script>
   </body>
 </html>

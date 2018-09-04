@@ -1,3 +1,13 @@
+@import url('header.css');
+@import url('login-panel.css');
+
+.clearfix:after{
+	content: '';
+	display: table;
+	visibility: hidden;
+	clear: both;
+}
+
 .main{
 	margin-top: 52px;
 	padding-top: 70px;
@@ -319,13 +329,46 @@
 	}
 
 	.sidebar .list-group{
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 
 	.sidebar .list-group-item span{
 		float: right;
 		font-weight: bold;
+		padding: 3px 7px;
+		color: #fff;
+		border-radius: 10px;
+		font-size: 12px;
+		line-height: 1;
 	}
+
+	.sidebar .list-group-item span *{
+		color: #fff;
+	}
+
+	.sidebar .list-group-item span.red{
+		background-color: #FF4F4F;
+	}
+
+	.sidebar .list-group-item span.blue{
+		background-color: #5ac0de;
+	}
+
+	.sidebar .btn{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.sidebar .note-list{
+		box-sizing: border-box;
+		border: 1px solid rgb(250, 235, 204);
+		background-color: rgb(254, 252, 238);
+		padding: 15px;
+		font-size: 13px;
+	}
+
+	.sidebar .note-list p{color: #8a6d3b;}
+	.sidebar .note-list p:first-child{color: #ff0000;}
 
 	.main-value .body{
 		width: 780px;
@@ -344,7 +387,7 @@
 	}
 
 	.body .top-nav{
-		margin: 35px 5px 0 5px;
+		margin: 20px 5px 0 5px;
 		text-align: center;
 		padding-bottom: 10px;
 		border-bottom: 1px solid rgb(224, 224, 224);
@@ -354,7 +397,7 @@
 		height: 20px;
 		line-height: 20px;
 		display: inline-block;
-		margin: 0 10px;
+		margin: 10px 10px 0 10px;
 	}
 
 	.body .top-nav li *{color: #000;}
@@ -546,13 +589,16 @@
 
 	@media screen and (max-width: 1170px){
 		.main .main-body{
-			width: 1040px;
+			width: 970px;
+		}
+		.main-value .sidebar{
+			width: 320px;
 		}
 		.main-value .body{
 			width: 650px;
 		}
 	}
-	@media screen and (max-width: 1040px){
+	@media screen and (max-width: 970px){
 		.main .main-body{
 			width: 750px;
 			margin: 0 auto;
@@ -618,4 +664,36 @@
 		background-color: rgb(255, 233, 0);
 		padding-left: 60px;
 	}
-			
+		
+/*@signIn-panel 签到模态框*/	
+#signIn-panel{
+
+}
+#signIn-panel .modal-footer{
+	border-top: 0;
+}
+#signIn-panel .modal-footer{
+	text-align: center;
+}
+#signIn-panel .modal-footer button{
+	padding: 6px 37px;
+	position: relative;
+	top: -30px;
+}
+#signIn-panel .progress{
+	height: 5px;
+}
+@keyframes progress-move{
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -40px 0;
+	}
+}
+#signIn-panel .progress-bar{
+	background-color: #0094ff;
+	background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+	background-size: 40px 40px;
+	animation: progress-move 2s linear infinite;
+}

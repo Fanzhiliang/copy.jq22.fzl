@@ -138,5 +138,26 @@ require(['utils','jquery','bootstrap','footer','loginPanel'],function(utils,$){
 			resetSomething();
 		})
 
+		//签到
+		var signIn = $("#signIn"),
+			signPanel = $("#signIn-panel"),
+			signCount = 0;
+		if(signIn && signPanel){
+			signIn.click(function(){
+				signPanel.modal('show');
+			})
+			signPanel.find("button").click(function(e){
+				e.preventDefault();
+				++signCount;
+				if(signCount<=3){
+					signPanel.find(".progress-bar").css('width',(33.5*signCount)+'%');
+					signPanel.find(".num").text(signCount);
+				}
+				if(signCount==3){
+					$(this).css('opacity',0.5);
+					$(this).text('已签到');
+				}
+			})
+		}
 	})
 });
